@@ -15,7 +15,7 @@
 #   `terraform destroy`
 
 module "prod" {
-    source = "github.com/bananalab/bananalab-modules//modules/bananalab-platform"
+    source = "github.com/bananalab/bananalab-modules//modules/bananalab-platform?ref=v0.1.0"
     name               = "prod"
     asg_instance_type  = "t2.micro"
     asg_max_instances  = 5
