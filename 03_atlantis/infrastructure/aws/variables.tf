@@ -65,7 +65,7 @@ variable "atlantis_gh_user" {
     description = <<-EOT
         GitHub username of API user.
     EOT
-    default = null
+    default = "rojopolis"
 }
 
 variable "atlantis_gh_token_secret" {
@@ -74,5 +74,5 @@ variable "atlantis_gh_token_secret" {
         ARN of an AWS Secrets Manager secret containing
         GitHub token
     EOT
-    default = null
+    default = "arn:aws:secretsmanager:us-west-1:202151242785:secret:atlantis/gh_token-V8M4FD"
 }
